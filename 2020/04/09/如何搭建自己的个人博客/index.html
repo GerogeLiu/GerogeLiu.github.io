@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586430510921&di=700e8de8fb9c6a80607ddb7fa5f8fc1f&imgtype=0&src=http%253A%252F%252Fwww.hc79.com%252Fuploads%252Fallimg%252F180827%252F1-1PRG03250140.jpg">
 <meta property="og:image" content="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3577716916,1908837531&fm=26&gp=0.jpg">
 <meta property="article:published_time" content="2020-04-09T08:13:21.000Z">
-<meta property="article:modified_time" content="2020-04-09T09:25:31.491Z">
+<meta property="article:modified_time" content="2020-04-09T10:18:20.620Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586430510921&di=700e8de8fb9c6a80607ddb7fa5f8fc1f&imgtype=0&src=http%253A%252F%252Fwww.hc79.com%252Fuploads%252Fallimg%252F180827%252F1-1PRG03250140.jpg">
@@ -213,11 +213,13 @@
 <li>安装hexo部署到git上的插件<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装部署到git上的插件</span></span><br><span class="line">$ cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure></li>
 <li>打开_config.yml文件写入需要的配置信息<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#_config.yml</span></span><br><span class="line">...</span><br><span class="line"><span class="comment">#deployment</span></span><br><span class="line"><span class="built_in">type</span>: git</span><br><span class="line">repo: https://github.xx/xx.github.io</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></li>
 <li>部署到github<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#部署deployment</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment">#或</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3577716916,1908837531&fm=26&gp=0.jpg" alt="还没结束哦"><h2 id="主题要怎么更换呢"><a href="#主题要怎么更换呢" class="headerlink" title="主题要怎么更换呢?"></a>主题要怎么更换呢?</h2></li>
-<li>从github上下载需要的主题如yilia</li>
-<li>修改_config.yml文件</li>
-<li>先使用清除命令，后使用生成命令</li>
-<li>重新推送到github</li>
+<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3577716916,1908837531&fm=26&gp=0.jpg" alt="还没结束哦"></li>
+</ol>
+<h2 id="主题要怎么更换呢"><a href="#主题要怎么更换呢" class="headerlink" title="主题要怎么更换呢?"></a>主题要怎么更换呢?</h2><ol>
+<li>从github上下载需要的主题如yilia<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#git clone 主题yilia到themes/yilia目录下</span></span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure></li>
+<li>修改_config.yml文件<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#_config.yml</span></span><br><span class="line"><span class="comment">#修改theme属性为yilia</span></span><br><span class="line">...</span><br><span class="line">theme: yilia</span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>先使用清除命令，后使用生成命令<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></li>
+<li>重新部署到github<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></li>
 <li>搞定</li>
 </ol>
 
